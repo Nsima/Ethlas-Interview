@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 // Uncomment this line to use console.log
 import "hardhat/console.sol";
 
-contract Wallet {
+contract Wallet is ReentrancyGuard{
 
     using Math for uint256;
     address public owner;
@@ -28,7 +28,7 @@ contract Wallet {
     }
 
     // Withdraw function: Users can withdraw their deposited Ether
-    function withdraw(uint256 amount) public {
+    function withdraw(uint256 amount) public nonReentrant() {
         require(amount > 0, "Amount must be greater than 0");
         require(balances[msg.sender] >= amount, "Insufficient balance");
 
