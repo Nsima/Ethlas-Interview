@@ -20,17 +20,87 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+# **Technical Interview  for Ethlas**
 
-To learn more about Next.js, take a look at the following resources:
+<img alt="Solidity" src="https://img.shields.io/badge/Solidity-e6e6e6?style=for-the-badge&logo=solidity&logoColor=black"> <img alt="Typescipt" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white">
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This repo contains a Smart Contract for Depositing and Withdrawing an ERC20token.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Technolgies Used
+-   Solidity
+-   TypeScript
+-   Hardhat
+-   Node
+-   Reactjs
+-   TailwindCSS
 
-## Deploy on Vercel
+## **Prerequisites**
+-   npm
+-   hardhat
+-   nextjs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## **Getting started**
+1.  Clone the repository
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```sh
+git clone --branch <branch_name> https://github.com/interview/interview.git
+```
+
+2.  Navigate to `interview` directory
+
+```sh
+cd interview
+```
+
+3.  Install dependencies
+
+```sh
+npm install
+```
+
+4.  Configure project (Will add later when deploying to testnet)
+
+```sh
+cp .env.example .env
+```
+
+## **Compile Smart Contracts**
+
+
+To compile every smart contract run the following command in your terminal:
+
+Navigate to the 'contracts' folder /interview/contracts
+
+```sh
+npx hardhat compile
+```
+
+
+
+## **Run tests**
+
+To run the tests in the test folder run the following command in your terminal:
+
+Navigate to the 'contracts' folder /interview/contracts
+
+Note: Running tests automatically compiles any smart contracts
+
+-   To run all tests
+```sh
+npx hardhat test
+```
+
+
+## **Deploy to Blockchain Network** (Sepolia)
+
+-   To a specific testnet
+
+```sh
+npx hardhat --network <network-name-in-tsconfig> deploy -- tags <deploy-script-tags>
+```
+
+-   To local development network (to test deployment)
+
+```sh
+npx hardhat deploy -- tags <deploy-script-tags>
+```
