@@ -33,6 +33,8 @@ npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+Check out [https://ethlas-mjo7ocmp5-nsimas-projects.vercel.app/](https://ethlas-mjo7ocmp5-nsimas-projects.vercel.app/)
+
 
 # **Technical Interview  for Ethlas**
 
