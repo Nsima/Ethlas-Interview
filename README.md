@@ -85,17 +85,16 @@ Note: Running tests automatically compiles any smart contracts
 npx hardhat test
 ```
 
-
-## **Deploy to Blockchain Network** (Sepolia)
+## **Deploy to Blockchain Network**
 
 -   To a specific testnet
 
 ```sh
-npx hardhat --network <network-name-in-tsconfig> deploy -- tags <deploy-script-tags>
+npx hardhat ignition deploy --network <network-name-in-tsconfig> 
 ```
 
 -   To local development network (to test deployment)
 
 ```sh
-npx hardhat deploy -- tags <deploy-script-tags>
+npx hardhat ignition deploy ./ignition/modules/deployMyToken.js -- network localhost
 ```
