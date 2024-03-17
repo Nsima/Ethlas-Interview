@@ -90,7 +90,7 @@ npx hardhat test
 -   To a specific testnet
 
 ```sh
-npx hardhat ignition deploy --network <network-name-in-tsconfig> 
+npx hardhat ignition deploy --network alchemy 
 ```
 
 -   To local development network (to test deployment)
