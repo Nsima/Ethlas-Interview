@@ -1,31 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-# **Technical Interview  for Ethlas**
-
-<img alt="Solidity" src="https://img.shields.io/badge/Solidity-e6e6e6?style=for-the-badge&logo=solidity&logoColor=black"> <img alt="Typescipt" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white">
-
-This repo contains a Smart Contract for Depositing and Withdrawing an ERC20token.
-
 ## Technolgies Used
 -   Solidity
 -   TypeScript
@@ -39,7 +11,9 @@ This repo contains a Smart Contract for Depositing and Withdrawing an ERC20token
 -   hardhat
 -   nextjs
 
-## **Getting started**
+## Getting Started
+
+First, install dependencies and then run the development server:
 1.  Clone the repository
 
 ```sh
@@ -51,6 +25,25 @@ git clone --branch <branch_name> https://github.com/interview/interview.git
 ```sh
 cd interview
 ```
+
+```bash
+npm install
+npm run dev
+
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+# **Technical Interview  for Ethlas**
+
+<img alt="Solidity" src="https://img.shields.io/badge/Solidity-e6e6e6?style=for-the-badge&logo=solidity&logoColor=black"> <img alt="Typescipt" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white">
+
+This repo contains a Smart Contract for Depositing and Withdrawing an ERC20token.
+
+
+## **Getting started**
+
+
 
 3.  Install dependencies
 
