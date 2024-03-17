@@ -1,7 +1,8 @@
-require("@nomicfoundation/hardhat-ignition-ethers");
-require("@nomicfoundation/hardhat-ethers");
-require("@nomicfoundation/hardhat-ignition");
+//require("@nomicfoundation/hardhat-ignition-ethers");
+//require("@nomicfoundation/hardhat-ethers");
+//require("@nomicfoundation/hardhat-ignition");
 const { ethers } = require("hardhat");
+//const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
 
 async function main() {
   const [deployer] = await ethers.getSigners();
@@ -12,7 +13,7 @@ async function main() {
   const MyToken = await ethers.getContractFactory("MyToken");
   const myToken = await MyToken.deploy("Test Token", "TEST");
 
-  console.log("MyToken deployed to:", myToken.address);
+  console.log("MyToken has been deployed to:", myToken.address);
 }
 
 main()
