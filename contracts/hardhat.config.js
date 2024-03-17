@@ -2,11 +2,11 @@ require("@nomicfoundation/hardhat-toolbox");
 require("@nomicfoundation/hardhat-ignition-ethers");
 require("@nomicfoundation/hardhat-ethers");
 require("@nomicfoundation/hardhat-ignition");
+
 require("dotenv").config({ path: ".env" });
 
 const { Network, Alchemy } = require('alchemy-sdk');
 
-//const ALCHEMY_API_KEY = vars.get("SEPOLIA_API_KEY");
 
 module.exports = {
   
