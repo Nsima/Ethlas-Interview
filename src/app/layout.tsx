@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import clsx from "clsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={clsx(inter.className, "bg-slate-50 md:bg-gradient-to-r from-slate-100 to-slate-600")}>
+        {children}
+        <footer className="h-[20px] bg-[#111427] tracking-wider text-slate-500 flex items-center justify-center w-full text-xs">
+          &copy; 2024 Smart Contract Top Up. All rights reserved
+        </footer>
+      </body>
     </html>
   );
 }
