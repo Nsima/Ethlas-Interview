@@ -1,4 +1,5 @@
-//import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
+require("@nomicfoundation/hardhat-ignition-ethers");
+require("@nomicfoundation/hardhat-ethers");
 require("@nomicfoundation/hardhat-ignition");
 const { ethers } = require("hardhat");
 
@@ -20,5 +21,3 @@ main()
     console.error(error);
     process.exit(1);
   });
-
-console.log("Deployed");
