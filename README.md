@@ -17,7 +17,7 @@ First, install dependencies and then run the development server:
 1.  Clone the repository
 
 ```sh
-git clone --branch <branch_name> https://github.com/interview/interview.git
+git clone --branch <branch_name> [https://github.com/interview/interview.git](https://github.com/Nsima/Ethlas-Interview.git)
 ```
 
 2.  Navigate to `interview` directory
